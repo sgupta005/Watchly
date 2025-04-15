@@ -13,12 +13,12 @@ const inter = Inter({ subsets: ["latin"] });
 const baseUrl =
   process.env.NEXT_PUBLIC_BASE_URL ||
   (process.env.NODE_ENV === "production"
-    ? "https://thecinevault.vercel.app"
+    ? "https://watchly.vercel.app"
     : "http://localhost:3000");
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
-  title: "CineVault",
+  title: "Watchly",
   description: "Your Perfect Movie Companion",
   openGraph: {
     images: [
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
         url: "/landing.png",
         width: 1200,
         height: 630,
-        alt: "CineVault",
+        alt: "Watchly",
       },
     ],
   },
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
         url: "/landing.png",
         width: 1200,
         height: 630,
-        alt: "CineVault",
+        alt: "Watchly",
       },
     ],
   },

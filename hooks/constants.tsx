@@ -22,11 +22,5 @@ export function useGetMoreNavItems() {
   return navLinks;
 }
 
-export function useGetSocialsLinks() {
-  const linkedin = "https://www.linkedin.com/in/actuallyakshat";
-  const github = "https://github.com/actuallyakshat/cinevault";
-  return { linkedin, github };
-}
-
 export const defaultProfileImage =
-  "https://res.cloudinary.com/djpbvhxfh/image/upload/v1735148944/cinevault/profile/jo9vh0lfjf4bwca2bc6o.jpg";
+  "https://res.cloudinary.com/djpbvhxfh/image/upload/v1735148944/watchly/profile/jo9vh0lfjf4bwca2bc6o.jpg";

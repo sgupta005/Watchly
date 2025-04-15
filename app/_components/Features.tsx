@@ -50,7 +50,7 @@ export function Features() {
             Your Complete Movie Companion
           </p>
           <p className="mt-6 text-lg leading-8 text-muted-foreground">
-            CineVault helps you organize your movie life with powerful features
+            Watchly helps you organize your movie life with powerful features
             designed for movie enthusiasts.
           </p>
         </div>

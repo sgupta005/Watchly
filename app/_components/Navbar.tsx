@@ -29,7 +29,7 @@ export default function Navbar() {
       >
         <div className="flex h-full w-full items-center justify-between px-6 lg:container lg:px-4">
           <h1 className="hidden text-xl font-extrabold lg:block">
-            <Link href={isSignedIn ? "/dashboard" : "/"}>CineVault</Link>
+            <Link href={isSignedIn ? "/dashboard" : "/"}>Watchly</Link>
           </h1>
           <MobileSidebar menuItems={[...navItems, ...moreNavItems]} />
           <div className="hidden items-center space-x-2 lg:flex">

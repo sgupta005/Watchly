@@ -33,7 +33,7 @@ export default function MobileSidebar({
                 onClick={() => setOpen(false)}
                 href={user ? "/dashboard" : "/"}
               >
-                CineVault
+                Watchly
               </Link>
             </SheetTitle>
             <SheetDescription asChild>

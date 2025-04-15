@@ -4,7 +4,7 @@ import axios from "axios";
 
 const TOKEN = process.env.TMDB_API_TOKEN as string;
 const DEFAULT_PFP =
-  "https://res.cloudinary.com/djpbvhxfh/image/upload/v1735321020/cinevault/profile/hkljs8qrndn7wpyqsbnt.jpg";
+  "https://res.cloudinary.com/djpbvhxfh/image/upload/v1735321020/watchly/profile/hkljs8qrndn7wpyqsbnt.jpg";
 
 async function searchMedia(query: string, mediaType: string) {
   try {

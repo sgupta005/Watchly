@@ -14,7 +14,7 @@ import EditCollaborators from "./_components/EditCollaborators";
 import LeaveMovieBoardDialog from "./_components/LeaveMovieBoardDialog";
 import MediaGrid from "./_components/MediaGrid";
 
-const UPLOAD_PRESET = "cinevault_movieboards";
+const UPLOAD_PRESET = "watchly_movieboards";
 
 export default async function MovieBoard({
   params,

@@ -8,7 +8,7 @@ CREATE TYPE "VisibilityOption" AS ENUM ('PUBLIC', 'PRIVATE');
 CREATE TABLE "User" (
     "id" TEXT NOT NULL,
     "name" TEXT NOT NULL,
-    "profileImageUrl" TEXT NOT NULL DEFAULT 'https://res.cloudinary.com/djpbvhxfh/image/upload/v1735148944/cinevault/profile/jo9vh0lfjf4bwca2bc6o.jpg',
+    "profileImageUrl" TEXT NOT NULL DEFAULT 'https://res.cloudinary.com/djpbvhxfh/image/upload/v1735148944/watchly/profile/jo9vh0lfjf4bwca2bc6o.jpg',
     "email" TEXT NOT NULL,
     "showFavoritesOnProfile" BOOLEAN NOT NULL DEFAULT true,
 

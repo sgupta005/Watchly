@@ -12,9 +12,9 @@ import Image from "next/image";
 import Link from "next/link";
 import EditProfileDialog from "../_components/EditProfileDialog";
 
-const UPLOAD_PRESET = "cinevault_user_profile_image";
+const UPLOAD_PRESET = "watchly_user_profile_image";
 const DEFAULT_PFP =
-  "https://res.cloudinary.com/djpbvhxfh/image/upload/v1735321020/cinevault/profile/hkljs8qrndn7wpyqsbnt.jpg";
+  "https://res.cloudinary.com/djpbvhxfh/image/upload/v1735321020/watchly/profile/hkljs8qrndn7wpyqsbnt.jpg";
 
 export default async function Profile({ params }: { params: { id: string } }) {
   const { id } = params;
