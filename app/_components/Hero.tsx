@@ -59,8 +59,8 @@ export function Hero() {
             transition={{ delay: 0.5, duration: 0.6 }}
           >
             Create your personal movie library, share recommendations, and
-            organize your watchlist. Track what you've watched and discover new
-            favorites.
+            organize your watchlist. Track what you&apos;ve watched and discover
+            new favorites.
           </motion.p>
           <motion.div
             className="mt-10 flex items-center justify-center gap-x-6"
