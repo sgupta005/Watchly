@@ -80,6 +80,9 @@ importers:
       lucide-react:
         specifier: ^0.378.0
         version: 0.378.0(react@18.3.1)
+      motion:
+        specifier: ^12.7.3
+        version: 12.7.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       next:
         specifier: 14.2.3
         version: 14.2.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -1576,6 +1579,20 @@ packages:
     resolution: {integrity: sha512-ETEklSGi5t0QMZuiXoA/Q6vcnxcLQP5vdugSpuAyi6SVGi2clPPp+xgEhuMaHC+zGgn31Kd235W35f7Hykkaww==}
     engines: {node: '>= 6'}
 
+  framer-motion@12.7.3:
+    resolution: {integrity: sha512-dNT4l5gEnUo2ytXLUBUf6AI21dZ77TMclDKE3ElaIHZ8m90nJ/NCcExW51zdSIaS0RhAS5iXcF7bEIxZe8XG2g==}
+    peerDependencies:
+      '@emotion/is-prop-valid': '*'
+      react: ^18.0.0 || ^19.0.0
+      react-dom: ^18.0.0 || ^19.0.0
+    peerDependenciesMeta:
+      '@emotion/is-prop-valid':
+        optional: true
+      react:
+        optional: true
+      react-dom:
+        optional: true
+
   fs.realpath@1.0.0:
     resolution: {integrity: sha512-OO0pH2lK6a0hZnAdau5ItzHPI6pUlvI7jMVnxUQRtw4owF2wk8lOSabtGDCTP4Ggrg2MbGnWO9X8K1t4+fGMDw==}
 
@@ -1946,6 +1963,26 @@ packages:
   minipass@7.1.1:
     resolution: {integrity: sha512-UZ7eQ+h8ywIRAW1hIEl2AqdwzJucU/Kp59+8kkZeSvafXhZjul247BvIJjEVFVeON6d7lM46XX1HXCduKAS8VA==}
     engines: {node: '>=16 || 14 >=14.17'}
+
+  motion-dom@12.7.3:
+    resolution: {integrity: sha512-IjMt1YJHrvyvruFvmpmd6bGXXGCvmygrnvSb3aZ8KhOzF4H3PulU+cMBzH+U8TBJHjC/mnmJFRIA1Cu4vBfcBA==}
+
+  motion-utils@12.7.2:
+    resolution: {integrity: sha512-XhZwqctxyJs89oX00zn3OGCuIIpVevbTa+u82usWBC6pSHUd2AoNWiYa7Du8tJxJy9TFbZ82pcn5t7NOm1PHAw==}
+
+  motion@12.7.3:
+    resolution: {integrity: sha512-EGhzIg7vj+USH9SLNLjHRzglldWEletUZTEtBVKW7IJF+1Ig3RI5LnJmHQBNutuOIyeUbcF36MrNFT00etlc3g==}
+    peerDependencies:
+      '@emotion/is-prop-valid': '*'
+      react: ^18.0.0 || ^19.0.0
+      react-dom: ^18.0.0 || ^19.0.0
+    peerDependenciesMeta:
+      '@emotion/is-prop-valid':
+        optional: true
+      react:
+        optional: true
+      react-dom:
+        optional: true
 
   ms@2.1.2:
     resolution: {integrity: sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==}
@@ -4284,6 +4321,15 @@ snapshots:
       combined-stream: 1.0.8
       mime-types: 2.1.35
 
+  framer-motion@12.7.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+    dependencies:
+      motion-dom: 12.7.3
+      motion-utils: 12.7.2
+      tslib: 2.6.2
+    optionalDependencies:
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+
   fs.realpath@1.0.0: {}
 
   fsevents@2.3.3:
@@ -4643,6 +4689,20 @@ snapshots:
   minimist@1.2.8: {}
 
   minipass@7.1.1: {}
+
+  motion-dom@12.7.3:
+    dependencies:
+      motion-utils: 12.7.2
+
+  motion-utils@12.7.2: {}
+
+  motion@12.7.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+    dependencies:
+      framer-motion: 12.7.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      tslib: 2.6.2
+    optionalDependencies:
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
 
   ms@2.1.2: {}
 
