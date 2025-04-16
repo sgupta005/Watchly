@@ -4,7 +4,7 @@ Watchly is a minimal digital library designed for movie and TV show enthusiasts.
 
 ### Key Features
 
-#### Search and Details
+#### Search details
 
 - Search for Any Movie or TV Show: Easily find movies or TV shows and read detailed information about them.
 - Watch Trailers: Watch trailers within Watchly without navigating to other video streaming platforms.

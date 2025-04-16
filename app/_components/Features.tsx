@@ -6,18 +6,6 @@ import { motion } from "motion/react";
 
 const features = [
   {
-    name: "Track Movies & Shows",
-    description:
-      "Keep a record of everything you watch with personal ratings and reviews.",
-    icon: Film,
-  },
-  {
-    name: "Movie Boards",
-    description:
-      "Create themed collections and collaborate with friends on curated movie lists.",
-    icon: ListChecks,
-  },
-  {
     name: "Share Recommendations",
     description: "Recommend movies to friends and discover their favorites.",
     icon: Share2,
@@ -33,9 +21,16 @@ const features = [
     icon: Heart,
   },
   {
-    name: "Discover",
-    description: "Discover new movies and shows you've never seen before.",
-    icon: Search,
+    name: "Track Movies & Shows",
+    description:
+      "Keep a record of everything you watch with personal ratings and reviews.",
+    icon: Film,
+  },
+  {
+    name: "Movie Boards",
+    description:
+      "Create themed collections and collaborate with friends on curated movie lists.",
+    icon: ListChecks,
   },
 ];
 
@@ -64,7 +59,7 @@ export function Features() {
             Everything you need
           </motion.h2>
           <motion.p
-            className="mt-6 text-3xl font-bold tracking-tight sm:text-5xl"
+            className="mt-10 bg-gradient-to-r from-foreground to-foreground/80 bg-clip-text text-5xl font-bold tracking-tight text-transparent sm:text-6xl"
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.5 }}

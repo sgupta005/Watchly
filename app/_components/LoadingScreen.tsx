@@ -1,23 +1,17 @@
 "use client";
 
-import { Clapperboard } from "lucide-react";
-import React, { useEffect, useState } from "react";
+import { cn } from "@/lib/utils";
+import { useTheme } from "next-themes";
+import React from "react";
 
 export default function LoadingScreen() {
-  const [theme, setTheme] = useState("light");
-
-  useEffect(() => {
-    const storedTheme = localStorage.getItem("theme") || "light";
-    setTheme(storedTheme);
-  }, []);
+  const { theme } = useTheme();
 
   return (
-    <div
-      className={`fixed inset-0 top-0 z-[2000] flex items-center justify-center ${
-        theme === "light" ? "" : "dark"
-      } bg-background`}
-    >
-      <Clapperboard className="size-12 animate-spin text-foreground" />
+    <div className="flex h-screen w-screen items-center justify-center bg-black">
+      <div
+        className={`h-12 w-12 animate-spin rounded-full border-4 border-white border-t-transparent`}
+      ></div>
     </div>
   );
 }
